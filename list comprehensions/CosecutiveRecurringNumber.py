@@ -9,6 +9,3 @@ def consecutive(A):
     final_list = list(zip(set(A),[sum(1 for elements in group) for key, group in groupby(sorted(A))]))
     return final_list
 
-A = [2,0,1,2,3,3,3,3,0,1,1,1,1]
-
-print(consecutive(A))
