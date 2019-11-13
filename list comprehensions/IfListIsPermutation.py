@@ -19,7 +19,7 @@ def permutation(A):
     return False, num
 
 # --------------- Explanation ---------------------------------------
-# (set(A).__contains__, count(1)) will convert the set A into a set to remove repetitive numbers and
+# (set(A).__contains__, count(1)) will convert the list A into a set to remove repetitive numbers and
 # count will start a counter from 1. The set(A).__contains__ will check if the number is in the set
 # filterfalse(set(A).__contains__, count(1)) will filter the false value, i.e. the first missing number
 # 'next' will iterate the iterator until the first value, which will be the missing number
