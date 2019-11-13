@@ -12,7 +12,6 @@ def divisible(a, b, num):
     if a > b:  # Check if the start number of range is larger than end number
         a, b = b, a
     count = list(filter(lambda x: x == 0, (map(operator.mod, range(a, b + 1), repeat(num))))).count(0)
-    print(list(filter(lambda x: x == 0, (map(operator.mod, range(a, b + 1), repeat(num))))))
     return count
 
 # --------------- Explanation ---------------------------------------
